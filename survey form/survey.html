@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="survey-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="" disabled selected>Select a country</option>
+                <option value="india">INDIA</option>
+                <option value="china">CHINA</option>
+                <option value="indonesia">INDONESIA</option>
+                <option value="pakistan">PAKISTAN</option>
+                <option value="bangladesh">BANGLADESH</option>
+                <option value="japan">JAPAN</option>
+                <option value="usa">USA</option>
+                <option value="uk">Uk</option>
+                <option value="israel">ISRAEL</option>
+                <option value="singapore">SINGAPORE</option>
+                <option value="brunei">BRUNEI</option>
+                <option value="bhutan">BHUTAN</option>
+                <option value="qatar">QATAR</option>
+                <option value="kuwait">KUWAIT</option>
+                <option value="maldives">MALDIVES</option>
+                <option value="armenia">ARMENIA</option>
+                <option value="oman">OMAN</option>
+                <option value="united arab emirates">UNITED ARAB EMIRATES</option>
+                <option value="jordan">JORDAN</option>
+                <option value="sri lanka">SRILANKA</option>
+            </select>
+
+            <label>Gender:</label>
+            <input type="checkbox" id="male" value="Male" name="gender"> <label for="male">Male</label>
+            <input type="checkbox" id="female" value="female" name="gender"> <label for="female">Female</label>
+            <input type="checkbox" id="transgender" value="Transgender" name="gender"> <label for="transgender">Transgender</label>
+            
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required>
+
+            <div class="button-container">
+                <button type="button" id="submit-btn">Submit</button>
+                <button type="button" id="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>Survey Form Submission</h2>
+            <!-- Popup content will be filled by JavaScript -->
+        </div>
+    </div>
+
+    <script src="survey.js"></script>
+</body>
+</html>
